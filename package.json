@@ -1,21 +1,41 @@
 {
   "name": "library-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "MVP for Library API Capstone Project",
   "main": "index.js",
+
   "scripts": {
+    "start": "node index.js",
+    "seed": "node database/seed.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Alexbaker10/library-api.git"
   },
-  "keywords": [],
+  "keywords": [
+    "express",
+    "sequelize",
+    "rest-api"
+  ],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/Alexbaker10/library-api/issues"
   },
-  "homepage": "https://github.com/Alexbaker10/library-api#readme"
+  "homepage": "https://github.com/Alexbaker10/library-api#readme",
+  
+  "dependencies": {
+    "express": "^4.19.2",
+    "sequelize": "^6.37.3",
+    "sqlite3": "^5.1.7"
+  },
+  
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "supertest": "^6.3.4"
+  }
 }
